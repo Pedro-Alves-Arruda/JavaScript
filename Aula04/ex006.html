@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            height: 2.5rem;
+            width: 10rem;
+            background-color: black;
+            color: white;
+            border-radius: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com o DOM</h1>
+    <p class="primeiro">MInha primeira tag "p"</p>
+    <p class="primeiro">Minha segunda tag "p"</p>
+    <p>MInha terceira tag "p"</p>
+    <button>Clique em mim</button><br><br>
+
+   
+<script>
+
+    let texto = document.querySelectorAll('p.primeiro')[1]
+    document.write(texto.innerText)
+    let currentTime = new Date()
+    let year = currentTime.getFullYear()
+    document.write(year)
+    
+
+</script>
+</body>
+</html>

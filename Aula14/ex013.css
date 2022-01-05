@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(134, 131, 131);
+    color: black;
+
+}
+header{
+    font: 20pt arial;
+    margin-left: 7rem;
+    color:black;
+}
+section{
+    background-color: rgb(196, 191, 191);
+    color: black;
+    padding: 1rem;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 1rem;
+}
+div{
+    margin-left: 4rem;
+    width: 5rem;
+    padding-top: 0,2rem;
+    color: black;
+}
+div#resp{
+    background-color: white;
+    width: 20rem;
+    margin-left: 0rem;
+    color: black;
+}
+input#button{
+    margin-left: 3.5rem;
+}
+footer{
+    margin-left: 6rem;
+}

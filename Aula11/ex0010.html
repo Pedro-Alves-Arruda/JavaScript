@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Digite seu país:<input type="text" id="nacionalidade">
+    <input type="button" value="verificar" onclick="verifica()">
+    <div id="resp">
+
+    </div>
+    <script>
+    
+        function verifica(){
+            let txt = window.document.getElementById('nacionalidade')
+            let resp = window.document.getElementById('resp')
+            let pais = txt.value
+            if (pais == 'brasil' || pais == 'Brasil'){
+                resp.innerHTML = `A sua nacionalidade é Brasileiro, pois você nasceu no ${pais.replace('b','B')}`
+            }else{
+                resp.innerHTML = `Você é estrangeiro, pois não nasceu no Brasil`
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

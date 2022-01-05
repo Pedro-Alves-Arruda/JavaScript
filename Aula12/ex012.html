@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Verificador de Idade</title>
+
+    <style>
+        #principal{
+           width: 20rem;
+           height: 35rem;
+           margin-left: 30rem;
+           background-color: rgb(226, 202, 202);
+           border-radius: 1rem;
+           padding: 1rem;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="principal">
+        Data de Nascimento<input type="number" name="dataNasc" id="dataNasc"><br><br>
+        
+        Masculino<input type="radio" name="sexo" id="sexo" value="Masculino">
+        Feminino<input type="radio" name="sexo" id="sexo" value="Feminino"><br><br>
+
+        <input type="button" value="Verificar" onclick="verifica()">
+        
+        <div id="resp"></div>
+        
+    </div>
+
+
+    <script>
+
+        function verifica(){
+          //Criando um objeto date para recolher o ano e calcular a idade
+          let ano = new Date()  
+          //recolhendo o valor da minha ta de id = 'dataNasc' e convertendo para um Number para calculo da //////idade posteriormente.
+          let dataNasc = window.document.getElementById('dataNasc')
+          let nasc = Number(dataNasc.value)
+          //Pegando a minha div resp para mostrar a mensagem final na tela.
+          let resp = window.document.getElementById('resp')
+
+          //pegando o valor do meu input radio
+          let sexo = window.document.querySelector('input[name="sexo"]:checked').value
+
+          let pronome = sexo == "Masculino"?"um":"uma"  
+          let pronome2 = sexo == "Feminino"?"viva":"vivo" 
+            
+          var img = window.document.createElement("IMG")
+          img.style.height = "13rem"
+          img.style.width = "15rem"
+          img.style.borderRadius = "2rem"
+          img.style.padding = "1rem"
+          img.style.marginLeft = "1.5rem"
+
+        if(dataNasc.value > ano.getFullYear() || dataNasc.value.length == 0){
+            window.alert('[ERRO] Por favor verifique as informações e as insira novamente')
+
+        }else if (sexo == null){
+            alert('Por favor insira o sexo')
+
+        }else if(sexo == "Feminino"){
+
+                img.src = "/Aula12/ex012_imagens/d127bf81bfc586f2f431ca3ef8332594.jpg"
+            }else{
+                img.src = "/Aula12/ex012_imagens/94910847-enfrente-a-expressão-de-um-homem-com-cabelo-louro-feliz-emoções-masculinas-personagem-de-desenho-ani.webp"
+            }
+
+          resp.innerHTML = `<br>Detectamos ${pronome} ser ${pronome2} do sexo ${sexo} de ${ano.getFullYear() - nasc} anos.<br>` 
+          resp.appendChild(img)
+        }
+
+
+    </script>
+</body>
+</html>

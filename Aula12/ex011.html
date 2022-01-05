@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio Dinamico</title>
+
+    <style>
+        p{
+            font: 25pt arial;
+            margin-left: 36rem;
+           
+        }
+        div{
+            background-color:rgb(221, 216, 216);
+            width: 50rem;
+            height: 25rem;
+            margin-left: 17rem;
+            border-radius: 2rem;
+            padding-top: 2rem;
+            padding-left: 0;
+            font: 25pt arial;
+            text-align: center;
+        }
+        input {
+            height: 2rem;
+            width: 10rem;
+            margin-top: 2rem;
+            margin-left: 37rem;
+            background-color: silver;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <p>Hora do dia</p>
+    <div id="telaHora"></div>
+    <input type="button" value="Atualizar" onclick="atualiza()">
+
+    <script>
+        function atualiza(){
+            //Selecionando a minha div telaHora para mostrar a hora na tela posteriormente
+            var telaHora = window.document.querySelector('div#telaHora')
+
+            //Pegando a hora do sistema
+            var dados = new Date()
+            var hora = dados.getHours()
+
+            //Adicionando a imagem no HTML e aplicando estilo a ela
+            var img = document.createElement("IMG")
+            img.style.width = "45rem"
+            img.style.height = "18rem"
+            
+            //if's e else aninhados para verificar a hora e mostrar a imagem corrtea
+            if (hora < 6){
+                telaHora.innerHTML = `Agora são ${hora}:${dados.getMinutes()}:${dados.getSeconds()} - Madrugada<p></p>` 
+
+                /*Adicionando a imagem o caminho do meu arquivo para que js ache ele e após isso adicionando ele na minha div telaHora*/
+                img.src = "/Aula12/ex011_imagens/img_7666-9303421.jpg"
+                telaHora.appendChild(img)
+
+            }else if (hora < 18){
+                telaHora.innerHTML = `Agora são ${hora}:${dados.getMinutes()}:${dados.getSeconds()} - Manhã<p></p>` 
+
+                /*Adicionando a imagem o caminho do meu arquivo para que js ache ele e após isso adicionando ele na minha div telaHora*/
+                img.src = "/Aula12/ex011_imagens/the-midday-sun-292160_960_720.jpg"
+                telaHora.appendChild(img)
+
+            }else{
+                telaHora.innerHTML = `Agora são ${hora}:${dados.getMinutes()}:${dados.getSeconds()} - Noite<p></p>` 
+                   
+                /*Adicionando a imagem o caminho do meu arquivo para que js ache ele e após isso adicionando ele na minha div telaHora*/
+                img.src = "/Aula12/ex011_imagens/depositphotos_64872759-stock-photo-full-moon-in-night-sky.jpg"
+                telaHora.appendChild(img)
+            }
+            
+        }
+    
+    </script>
+</body>
+</html>

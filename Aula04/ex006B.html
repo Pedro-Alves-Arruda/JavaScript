@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area{
+            font: 20pt arial;
+            color: white;
+            background-color: rgb(116, 240, 123);
+            width: 15rem;
+            height: 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"   >
+        Interaja
+
+    </div>
+
+
+    <script>
+        addEventListener('click', clicar)
+        addEventListener('mouseenter', entrar)
+        addEventListener('mouseout', sair)
+
+        area = document.getElementById('area')
+
+        function entrar(){
+            area.style.backgroundColor = 'black'
+        }
+        
+        function sair(){
+            area.style.backgroundColor = 'blue'
+        }
+
+        function clicar(){
+           area.innerHTML = 'Clicou <br> Parabéns <br/>'
+           area.style.backgroundColor = 'red'
+        }
+    </script>
+</body>
+</html>
