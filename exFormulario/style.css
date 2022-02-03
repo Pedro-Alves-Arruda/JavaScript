@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin-left: 20rem;
+    width: 45rem;
+    background-color: rgb(248, 248, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+#principal{
+    margin-top: 1rem;
+    background-color:skyblue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+header{
+    margin-left: 15rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#nomeSobrenome{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+    border-color: skyblue;
+}
+
+#nome{
+    margin-right: 1rem;
+}
+
+#email{
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+#especializacao, #senioridade{
+    margin-bottom: 0.4rem;
+}
+
+#tecnologias{
+    padding: 0.5rem;
+
+}
+
+#tecnologias1{
+    margin-bottom: 0.5rem;
+}

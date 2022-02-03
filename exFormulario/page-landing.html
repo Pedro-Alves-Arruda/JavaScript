@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <h3 id="titulo">Cadastro de DEV's</h3>
+            <h4 id="subtitulo">Registres seus dados</h4>
+        </header>
+
+        <form id="formulario">
+            <fieldset id="nomeSobrenome">  
+                <div id="nome">  
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div id="sobrenome">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" id="sobrenome" required>
+                </div>
+            </fieldset>
+            
+            <div id="email">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div id="especializacao">
+                <label><strong>Desenvolve em qual lado da aplicação?</strong></label>
+                <label>
+                    <input type="radio" name="webdev" value="Backend" checked>Back-End
+                </label>
+                <label>
+                    <input type="radio" name="webdev" value="frontend">Front-End
+                </label>
+                <label>
+                    <input type="radio" name="webdev" value="fullstack">fullstack
+                </label>
+            </div>
+
+            <div id="senioridade">
+                <label><strong>Qual a sua senioridade?</strong></label>
+                <label>
+                    <input type="radio" name="cargo" value="junior" checked>junior
+                </label>
+                <label>
+                    <input type="radio" name="cargo" value="Pleno">Pleno
+                </label>
+                <label>
+                    <input type="radio" name="cargo" value="senior">senior
+                </label>
+            </div>
+            <fieldset id="tecnologias">
+                <label><strong>Tecnologias usadas</strong></label>
+                <div id="tecnologias1">
+                    <input type="checkbox" name="html" id="html" value="HTML">HTML
+                    <input type="checkbox" name="javascript" id="javascript" value="javascript">JavaScript
+                    <input type="checkbox" name="java" id="java" value="JAVA">JAVA
+                    <input type="checkbox" name="c#" id="c#" value="c#">C#
+                    <input type="checkbox" name="c++" id="c++" value="c++">C++
+                    <input type="checkbox" name="C" id="C" value="C">C
+                    <input type="checkbox" name="react" id="react" value="react">react
+                </div>
+                <div id="tecnologias2">
+                    <input type="checkbox" name="Python" id="Python" value="Python">Python
+                    <input type="checkbox" name="php" id="php" value="php">PHP
+                    <input type="checkbox" name="css" id="css" value="css">CSS
+                    <input type="checkbox" name="nodejs" id="nodejs" value="nodejs">Node.js
+                    <input type="checkbox" name="git" id="git" value="git">Git
+                    <input type="checkbox" name="GitHub" id="GitHub" value="GitHub">GitHub
+                </div>
+            </fieldset>
+
+            <div>
+                <br>
+                <label><strong>Conte-nos mais sobre você</strong></label>
+                <br>
+                <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 26em;"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="salvar" id="salvar">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
