@@ -4,52 +4,113 @@
 }
 
 body{
-    margin-left: 20rem;
-    width: 45rem;
-    background-color: rgb(248, 248, 250);
+    margin-left: 25rem;
+    width: 30rem;
+    background-color:rgb(176, 225, 245);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13pt;
 }
 
 #principal{
     margin-top: 1rem;
-    background-color:skyblue;
+    background-color:rgb(176, 225, 245);
     padding: 1rem;
     border-radius: 0.5rem;
 
 }
 header{
-    margin-left: 15rem;
+    margin-left: 10rem;
     margin-bottom: 0.5rem;
 
 }
 
 #nomeSobrenome{
+    margin-left: 4rem;
+    border:0;
     padding: 0.5rem;
     border-radius: 0.5rem;
     display: flex;
     margin-bottom: 0.5rem;
-    border-color: skyblue;
+    background-color:rgb(176, 225, 245);
 }
 
-#nome{
+#name, #sobrenome{
+    
     margin-right: 1rem;
+    margin-bottom: 2rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    
 }
 
 #email{
-    margin-left: 0.1rem;
-    margin-bottom: 0.1rem;
+    margin-left: 2.2rem;
+    margin-bottom: 2rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    display: block;
+}
+#email label{
+    margin-left: 2.1rem;
 }
 
-#especializacao, #senioridade{
-    margin-bottom: 0.4rem;
+#Email{
+    margin-left: 2.2rem;
+    margin-bottom: 2rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    display: block;
+}
+#Email label{
+    margin-left: 2.1rem;
+}
+
+#especializacao{
+    padding-top: 1%;
+    margin-bottom: 1rem;
+    margin-left: 4.4rem;
+}
+
+#senioridade{
+    margin-bottom: 1rem;
+    margin-left: 4.3rem;
 }
 
 #tecnologias{
+    margin-left: 3.7rem;
     padding: 0.5rem;
+    border:0;
 
 }
 
 #tecnologias1{
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.experiencia label{
+    margin-left: 9rem;
+}
+
+#experiencia{
+    margin-top: 0.3rem;
+    margin-left: 4.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 2px rgb(0,0,0,2);
+    
+}
+
+#salvar{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin-top: 0.5rem;
+    width: 6rem;
+    height: 1.8rem;
+    margin-left: 13rem;
+    border-radius: 0.2rem;
+
+}
+
+#salvar:hover{
+    background-color: rgb(226, 224, 224);
 }
